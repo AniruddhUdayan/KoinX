@@ -1,7 +1,8 @@
-'use client'
+"use client";
 import React, { useState } from "react";
+import PerformanceCard from "./PerformanceCard";
 
-const TabComponent = () => {
+const TabComponent = ({crypto}) => {
   const [activeTab, setActiveTab] = useState("overview");
 
   const getTabClassName = (tabName) => {
@@ -11,7 +12,6 @@ const TabComponent = () => {
         : "font-[500]"
     }`;
   };
-  
 
   return (
     <div>
@@ -60,7 +60,20 @@ const TabComponent = () => {
             Tokenomics
           </button>
         </div>
-        <div className="h-0 relative bottom-[2px] border border-[#DEE1E6] w-full"></div>
+        <div className="h-0 relative bottom-[2px] border border-[#DEE1E6] w-full mb-[20px]"></div>
+        <div className="max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col p-[24px] ">
+          {activeTab === "overview" && (
+            <div className="flex flex-col gap-[24px]">
+              <PerformanceCard crypto={crypto} />
+            </div>
+          )}
+          {activeTab === "fundamentals" && <div>Fundamentals Content</div>}
+          {activeTab === "news insights" && <div>News Insights Content</div>}
+          {activeTab === "sentiments" && <div>Sentiments Content</div>}
+          {activeTab === "team" && <div>Team Content</div>}
+          {activeTab === "technicals" && <div>Technicals Content</div>}
+          {activeTab === "tokenomics" && <div>Tokenomics Content</div>}
+        </div>
       </div>
     </div>
   );

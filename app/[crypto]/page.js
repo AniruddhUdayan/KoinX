@@ -1,4 +1,5 @@
 import GraphCard from "@/components/GraphCard";
+import Sentiment from "@/components/Sentiment";
 import TabComponent from "@/components/TabComponent";
 import TrendingCoins from "@/components/TrendingCoins";
 import Image from "next/image";
@@ -23,7 +24,8 @@ const page = ({ params }) => {
         <div className="flex flex-wrap flex-row gap-[20px]">
           <div className="flex flex-col gap-[20px]">
             <GraphCard crypto={params.crypto} />
-            <TabComponent/>
+            <TabComponent crypto={params.crypto}/>
+            <Sentiment/>
           </div>
           <div className="flex flex-col gap-[20px]">
             <div className="max-sm:w-[374px] rounded-2 flex-col flex bg-[#0052FE] pt-[16px] pb-[16px] sm:pl-[31px] pl-[10px] pr-[10px] sm:pr-[31px] rounded-[8px] justify-center items-center gap-[19px]">
