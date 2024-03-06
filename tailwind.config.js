@@ -7,12 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-gray': '#DEDFE2',
+      },
+      boxShadow: {
+        'custom-bottom': '0px 0px 12px rgba(16, 38, 73, 0.06)',
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-gradient': "linear-gradient(81.62deg, #2870EA 8.72%, #1B4AEF 85.01%)",
       },
     },
   },
-  plugins: [],
 };
