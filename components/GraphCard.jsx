@@ -108,8 +108,8 @@ const GraphCard = ({ crypto }) => {
               <Image
                 src={
                   cryptoPrice?.[crypto]?.usd_24h_change < 0
-                    ? "/downArrow.png"
-                    : "/polygon.svg"
+                    ? "/redArrow.png"
+                    : "/Polygon.svg"
                 }
                 alt={cryptoPrice?.[crypto]?.usd_24h_change < 0 ? "down" : "up"}
                 width={11}

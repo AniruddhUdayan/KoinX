@@ -24,7 +24,8 @@ function TradingViewWidget({ crypto }) {
     currentContainer.innerHTML = '';
     const symbolMap = {
       bitcoin: "BITSTAMP:BTCUSD",
-      ethereum: "BITSTAMP:ETHUSD"
+      ethereum: "BITSTAMP:ETHUSD",
+      solana:"COINBASE:SOLUSD"
     };
 
     const symbol = symbolMap[crypto] || "BITSTAMP:BTCUSD";

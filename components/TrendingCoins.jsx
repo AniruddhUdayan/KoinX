@@ -42,8 +42,8 @@ const TrendingCoins = () => {
               <Image
                 src={
                   coin.data.price_change_percentage_24h.usd < 0
-                    ? "/downArrow.png"
-                    : "/polygon.svg"
+                    ? "/redArrow.png"
+                    : "/Polygon.svg"
                 }
                 alt={coin.data.price_change_percentage_24h.usd < 0 ? "down" : "up"}
                 width={11}

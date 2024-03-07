@@ -19,7 +19,7 @@ const GetStartedCard = () => {
         <div className="font-[600] text-[16px] leading-[28px] ">
           Get Started for FREE
         </div>
-        <Image src="/arrowRight.svg" alt="arrow" width={20} height={20} />
+        <Image src="/ArrowRight.svg" alt="arrow" width={20} height={20} />
       </div>
     </div>
   );

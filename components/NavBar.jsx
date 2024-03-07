@@ -14,14 +14,14 @@ const NavBar = () => {
     <div className="bg-[#FFFFFF] border-custom-gray shadow-custom-bottom sm:h-[80px] h-[60px] flex flex-row items-center justify-between sm:pl-[56px] sm:pr-[56px] pl-[24px] pr-[24px] w-full">
       <div className="cursor-pointer">
         <Image
-          src="/Nav/koinXWeb.svg"
+          src="/KoinXWeb.svg"
           alt="KoinX"
           width={96}
           height={24}
           className="max-sm:hidden"
         />
         <Image
-          src="/Nav/koinXWeb.svg"
+          src="/KoinXWeb.svg"
           alt="KoinX"
           width={81}
           height={20.25}
