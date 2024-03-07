@@ -23,7 +23,7 @@ const page = ({ params }) => {
             <Image src="/before.svg" alt="arrow" width={11} height={11} />
           </div>
           <div className="text-[14px] leading-[17px] font-[500] flex items-center text-[#0F1629]">
-            {params.crypto.toUpperCase()}
+            {params.crypto.charAt(0).toUpperCase() + params.crypto.slice(1)}
           </div>
         </div>
         <div className="flex flex-wrap flex-row gap-[20px]">

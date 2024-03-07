@@ -29,7 +29,7 @@ const TrendingCoins = () => {
         {topThreeCoins.map((coin, index) => (
           <div key={index} className='flex flex-row justify-between'>
             <div className='flex flex-row gap-[6px]'>
-                <Image src={coin.small} alt={coin.name} width={24} height={24} />
+                <Image src={coin.small} alt={coin.name} width={28} height={24} className='rounded-[50%]'/>
                 <div className='text-[16px] leading-[19.2px] font-[600] flex items-center'>{coin.name} ({coin.symbol})</div>
             </div>
             <div

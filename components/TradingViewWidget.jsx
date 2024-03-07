@@ -25,7 +25,8 @@ function TradingViewWidget({ crypto }) {
     const symbolMap = {
       bitcoin: "BITSTAMP:BTCUSD",
       ethereum: "BITSTAMP:ETHUSD",
-      solana:"COINBASE:SOLUSD"
+      solana:"COINBASE:SOLUSD",
+      tether:"UNISWAP3ETH:TETHERWETH"
     };
 
     const symbol = symbolMap[crypto] || "BITSTAMP:BTCUSD";
@@ -62,7 +63,7 @@ function TradingViewWidget({ crypto }) {
     <>
       <div className="flex flex-row justify-between max-sm:hidden">
         <div className="text-[16px] leading-[19.5px] text-[#0B1426] font-[600] mb-[40px]">
-          {crypto.toUpperCase()} Price Chart (USD)
+        {crypto.charAt(0).toUpperCase() + crypto.slice(1)} Price Chart (USD)
         </div>
         <div>
           {timeFrames.map((timeFrame, index) => (
