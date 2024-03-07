@@ -26,7 +26,7 @@ const About = ({crypto}) => {
     fetchData();
   }, []);
   return (
-    <div className="max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col p-[24px] ">
+    <div className="max-sm:border max-sm:border-[#DEE1E6] max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col sm:p-[24px] px-[10px] py-[16px]">
       <div className="flex flex-col gap-[24px]">
         <div className="font-[600] text-[24px] leading-[28.8px] flex  items-center">
           About {coinData?.name}

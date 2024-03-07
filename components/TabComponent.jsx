@@ -61,7 +61,7 @@ const TabComponent = ({crypto}) => {
           </button>
         </div>
         <div className="h-0 relative bottom-[3px] border border-[#DEE1E6] w-full mb-[20px]"></div>
-        <div className="sm:max-w-[881px]  rounded-[8px] bg-[#FFFFFF] flex flex-col sm:p-[24px] px-[10px] py-[16px]">
+        <div className="max-sm:border max-sm:border-[#DEE1E6] sm:max-w-[881px]  rounded-[8px] bg-[#FFFFFF] flex flex-col sm:p-[24px] px-[10px] py-[16px]">
           {activeTab === "overview" && (
             <div className="flex flex-col gap-[24px]">
               <PerformanceCard crypto={crypto} />

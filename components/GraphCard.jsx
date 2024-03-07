@@ -66,7 +66,7 @@ const GraphCard = ({ crypto }) => {
           Rank #{currentCrypto?.market_cap_rank}
         </div>
       </div>{" "}
-      <div className=" rounded-[8px] bg-[#FFFFFF] pl-[24px] pt-[24px] pr-[24px] pb-[33px] lg:min-w-[881px]  flex flex-col ">
+      <div className="max-sm:border max-sm:border-[#DEE1E6] rounded-[8px] bg-[#FFFFFF] pl-[24px] pt-[24px] pr-[24px] pb-[33px] lg:min-w-[881px]  flex flex-col ">
         <div className="flex flex-row gap-[36px] mb-[40px] max-sm:hidden">
           {currentCrypto && (
             <div className="flex flex-row gap-2">
