@@ -6,9 +6,9 @@ const TabComponent = ({crypto}) => {
   const [activeTab, setActiveTab] = useState("overview");
 
   const getTabClassName = (tabName) => {
-    return `inline-block text-[16px] py-2 mx-4 ${
+    return ` text-[16px]   py-2  ${
       activeTab === tabName
-        ? "font-[600] text-[#0052FE] border-b-4 border-[#0052FE]"
+        ? "font-[600] text-[#0052FE] border-b-4 border-[#0052FE] z-10"
         : "font-[500]"
     }`;
   };
@@ -16,7 +16,7 @@ const TabComponent = ({crypto}) => {
   return (
     <div>
       <div className="flex flex-col">
-        <div>
+        <div className="flex w-full gap-[32px] flex-row overflow-x-scroll scrollbar-hide">
           <button
             className={getTabClassName("overview")}
             onClick={() => setActiveTab("overview")}
@@ -60,8 +60,8 @@ const TabComponent = ({crypto}) => {
             Tokenomics
           </button>
         </div>
-        <div className="h-0 relative bottom-[2px] border border-[#DEE1E6] w-full mb-[20px]"></div>
-        <div className="max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col p-[24px] ">
+        <div className="h-0 relative bottom-[3px] border border-[#DEE1E6] w-full mb-[20px]"></div>
+        <div className="sm:max-w-[881px]  rounded-[8px] bg-[#FFFFFF] flex flex-col sm:p-[24px] px-[10px] py-[16px]">
           {activeTab === "overview" && (
             <div className="flex flex-col gap-[24px]">
               <PerformanceCard crypto={crypto} />

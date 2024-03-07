@@ -11,15 +11,15 @@ const PerformanceBar = ({ data }) => {
 
   return (
     <>
-      <div className="flex flex-col gap-[10px] pb-[13px]">
+      <div className="flex flex-col gap-[10px] pb-[13px] sm:min-w-[112px]">
         <div className="pt-[6px] pr-[12px] font-[400] text-[13.78px] leading-[20px] flex items-center">
         {"Today's Low"}
         </div>
-        <div className="pr-[38px] font-[500] text-[15.63px] leading-[22px] flex items-center">
+        <div className="sm:pr-[38px] pr-[20px] font-[500] text-[15.63px] leading-[22px] flex items-center">
           {low.toFixed(2)}
         </div>
       </div>
-      <div className="relative w-full max-w-xl my-auto">
+      <div className="relative w-full sm:max-w-xl min-w-[125px] max-w-[160px] my-auto">
         <div className="h-[4.63px] rounded overflow-hidden">
           <div className="w-full h-full bg-gradient-to-r from-red-500 via-yellow-300 to-green-500"></div>
         </div>
@@ -38,10 +38,10 @@ const PerformanceBar = ({ data }) => {
         </div>
       </div>
       <div className="flex flex-col gap-[10px] pb-[13px]">
-        <div className="pt-[6px] pl-[12px] font-[400] text-[13.78px] leading-[20px] flex items-center justify-end">
+        <div className="pt-[6px] pl-[12px] sm:pl-[12px] font-[400] text-[13.78px] leading-[20px] flex items-center justify-end">
         {"Today's High"}
         </div>
-        <div className="pl-[38px] font-[500] text-[15.63px] leading-[22px] flex items-center">
+        <div className="sm:pl-[38px] pl-[20px] font-[500] text-[15.63px] leading-[22px] flex items-center">
           {high.toFixed(2)}
         </div>
       </div>
@@ -55,11 +55,11 @@ const PerformanceBar2 = () => {
         <div className="pt-[6px] pr-[12px] font-[400] text-[13.78px] leading-[20px] flex items-center">
           52W Low
         </div>
-        <div className="pr-[38px] font-[500] text-[15.63px] leading-[22px] flex items-center">
+        <div className="sm:pr-[38px] pr-[20px] font-[500] text-[15.63px] leading-[22px] flex items-center">
           16,930.22
         </div>
       </div>
-      <div className="relative w-full max-w-xl my-auto">
+      <div className="relative w-full sm:max-w-xl min-w-[125px] max-w-[160px]  my-auto">
         <div className="h-[4.63px] rounded overflow-hidden">
           <div className="w-full h-full bg-gradient-to-r from-red-500 via-yellow-300 to-green-500"></div>
         </div>
@@ -68,8 +68,8 @@ const PerformanceBar2 = () => {
         <div className="pt-[6px] pl-[12px] font-[400] text-[13.78px] leading-[20px] flex items-center justify-end">
           52W High
         </div>
-        <div className="pl-[38px] font-[500] text-[15.63px] leading-[22px] flex items-center">
-          49,743.83
+        <div className="sm:pl-[38px] pl-[20px]  font-[500] text-[15.63px] leading-[22px] flex items-center">
+          69,743.83
         </div>
       </div>
     </>
@@ -109,7 +109,7 @@ const PerformanceCard = ({crypto}) => {
       <div className="font-[600] text-[24px] leading-[28.8px] flex  items-center">
         Performance
       </div>
-      <div className="p-4 ">
+      <div className="sm:p-4">
         <div className="flex flex-col gap-[15px]">
           <div className="flex flex-row">
             <PerformanceBar data={coinData} />
@@ -126,7 +126,7 @@ const PerformanceCard = ({crypto}) => {
           </div>
           <Image src="/SVG.svg" width={20} height={20} alt="info" />
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between flex-wrap">
           <div className="flex flex-col max-w-[383px] w-[383px]">
             <div className="h-[54px] flex flex-row justify-between items-center border-b border-b-[##D3E0E6]">
               <div className="font-[500] text-[#768396] text-[14px] leading-[20px] flex items-center">

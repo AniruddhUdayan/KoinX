@@ -36,7 +36,7 @@ const About = ({crypto}) => {
             <div className="font-[700] text-[18px] leading-[21.6px]">
               What is {coinData?.name}?
             </div>
-            <div className="font-[500] text-[16px] leading-[25.6px] text-[#3E424A]">
+            <div className="font-[500] text-[16px] overflow-hidden leading-[25.6px] text-[#3E424A]">
              {coinData?.description?.en}
             </div>
           </div>
@@ -77,11 +77,11 @@ const About = ({crypto}) => {
           <div className="h-0 border border-[#DEE1E6]"></div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="font-[600] text-[24px] leading-[28.8px] flex  items-center">
+          <div className="font-[600] text-[16px] sm:text-[24px] leading-[28.8px] flex  items-center">
             Already Holding {coinData?.name}?
           </div>
-          <div className="flex flex-row justify-between">
-            <div className="flex-row gap-[27.61px] flex p-3 bg-custom-gradient1 w-[388px] h-[151px] rounded-[6.65px]">
+          <div className="flex flex-row justify-between flex-wrap gap-[15px]">
+            <div className="flex-row gap-[27.61px] flex p-3 bg-custom-gradient1 w-[362px] h-[140px] sm:w-[388px] sm:h-[151px] rounded-[6.65px]">
               <Image
                 src="/Rectangle.svg"
                 alt="arrow"
@@ -100,7 +100,7 @@ const About = ({crypto}) => {
                 </div>
               </div>
             </div>
-            <div className="flex-row gap-[27.61px] flex p-3 bg-custom-gradient2 w-[388px] h-[151px] rounded-[6.65px]">
+            <div className="flex-row gap-[27.61px] flex p-3 bg-custom-gradient2 w-[362px] h-[140px] sm:w-[388px] sm:h-[151px] rounded-[6.65px]">
               <Image
                 src="/Rectangle1.svg"
                 alt="arrow"

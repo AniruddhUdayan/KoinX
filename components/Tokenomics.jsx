@@ -36,7 +36,7 @@ const DonutChartComponent = () => {
 
 const Tokenomics = () => {
   return (
-    <div className="max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col p-[24px] ">
+    <div className="max-sm:hidden max-w-[881px] rounded-[8px] bg-[#FFFFFF] flex flex-col p-[24px] ">
       <div className="flex flex-col gap-[24px]">
         <div className="font-[600] text-[24px] leading-[28.8px] flex  items-center">
           Tokenomics
