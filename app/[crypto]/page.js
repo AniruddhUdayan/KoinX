@@ -4,13 +4,14 @@ import Sentiment from "@/components/Sentiment";
 import TabComponent from "@/components/TabComponent";
 import Team from "@/components/Team";
 import Tokenomics from "@/components/Tokenomics";
+import Trending from "@/components/Trending";
 import TrendingCoins from "@/components/TrendingCoins";
 import Image from "next/image";
 import React from "react";
 
 const page = ({ params }) => {
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col items-center gap-[78px]">
       <div className="sm:ml-[56px] ml-[14px]  mr-[14px] sm:mr-[56px] sm:mt-[18px]  mt-[23.25px] flex flex-col max-w-[1328px] w-full">
         <div className="flex flex-row mb-[18px] gap-[10px]">
           <div className="text-[14px] text-[#3E5765] leading-[17px] font-[400] flex items-center">
@@ -56,6 +57,7 @@ const page = ({ params }) => {
           </div>
         </div>
       </div>
+      <Trending/>
     </div>
   );
 };
