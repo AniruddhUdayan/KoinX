@@ -1,6 +1,9 @@
+import About from "@/components/About";
 import GraphCard from "@/components/GraphCard";
 import Sentiment from "@/components/Sentiment";
 import TabComponent from "@/components/TabComponent";
+import Team from "@/components/Team";
+import Tokenomics from "@/components/Tokenomics";
 import TrendingCoins from "@/components/TrendingCoins";
 import Image from "next/image";
 import React from "react";
@@ -26,6 +29,9 @@ const page = ({ params }) => {
             <GraphCard crypto={params.crypto} />
             <TabComponent crypto={params.crypto}/>
             <Sentiment/>
+            <About crypto={params.crypto}/>
+            <Tokenomics/>
+            <Team/>
           </div>
           <div className="flex flex-col gap-[20px]">
             <div className="max-sm:w-[374px] rounded-2 flex-col flex bg-[#0052FE] pt-[16px] pb-[16px] sm:pl-[31px] pl-[10px] pr-[10px] sm:pr-[31px] rounded-[8px] justify-center items-center gap-[19px]">
