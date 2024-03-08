@@ -42,6 +42,7 @@ const Trending = () => {
           throw new Error("Failed to fetch trending coins");
         }
         const data = await response.json();
+        console.log(data.coins);
         setTrendingCoins(data.coins);
       } catch (error) {
         console.error(error);
@@ -98,8 +99,8 @@ const Trending = () => {
                 </div>
                 <div className="flex flex-col ">
                     <div className="font-[500] text-[12.62px] sm:text-[20px] leading-[24px] flex items-center mb-[2px]">{coin.item.data.price}</div>
-                    <Image src={coin.item.data.sparkline} alt="arrow" width={200} height={60} className="max-sm:hidden" />
-                    <Image src={coin.item.data.sparkline} alt="arrow" width={126} height={37.85} className="sm:hidden" />
+                    <Image src={coin?.item?.data?.sparkline} alt="graph" width={200} height={60} className="max-sm:hidden" />
+                    <Image src={coin?.item?.data?.sparkline} alt="graph" width={126} height={37.85} className="sm:hidden" />
                 </div>
               </div>
             </div>
@@ -164,7 +165,7 @@ const Trending = () => {
                 </div>
                 <div className="flex flex-col ">
                     <div className="font-[500] text-[12.62px] sm:text-[20px] leading-[24px] flex items-center mb-[2px]">{coin.item.data.price}</div>
-                    <Image src={coin.item.data.sparkline} alt="arrow" width={200} height={60} />
+                    <Image src={coin?.item?.data?.sparkline} alt="graph" width={200} height={60} />
                 </div>
               </div>
             </div>
